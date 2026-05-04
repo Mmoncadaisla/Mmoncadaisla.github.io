@@ -15,7 +15,6 @@ python3 -m http.server 8000
 - `index.html` — page content
 - `assets/styles.css` — all styling (light + dark, print)
 - `assets/main.js` — theme toggle + footer year
-- `assets/Miguel_Moncada_CV.pdf` — downloadable PDF version
 
 ## Deploying to GitHub Pages
 
