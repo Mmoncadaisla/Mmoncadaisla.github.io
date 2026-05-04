@@ -158,9 +158,8 @@
               </p>
               <ul class="bullets">
                 <li>Built our platform's foundations — a Kubernetes cluster on GKE, deployed continuously through GitOps, set up to scale and grow as we do. APIs, databases and supporting services all run on it.</li>
-                <li>Run the day-to-day on that platform: Postgres clusters with CloudNativePG, Prometheus and Grafana for observability, Prefect workers for orchestration, LiteLLM as our LLM gateway, our own TiTiler service for serving raster data — and the rest of the carbon-platform APIs and apps on top.</li>
+                <li>Run the day-to-day on that platform: Postgres clusters with CloudNativePG, Prometheus and Grafana for observability, Prefect workers for orchestration, LiteLLM as our LLM gateway, our own TiTiler service for serving raster data — and the rest of the carbon-platform APIs and apps on top. For heavier compute (distributed jobs, big rasters, ML training) we step out to Databricks and Coiled.</li>
                 <li>Currently building <strong>Canopy</strong> — the platform that brings the carbon team's tools into one place, shaped by feedback sessions with the people who actually use it.</li>
-                <li>Set up our data architecture on Google Cloud — Postgres/PostGIS on Kubernetes, Databricks for heavier compute, plus the usual Python data toolbox (Dask, Xarray, MLFlow).</li>
                 <li>Built the data integration pipeline for forestry partners — validated staging/production flow so quarter-end isn't a panic.</li>
                 <li>Designed and shipped <strong>Knowbase AI</strong>, an internal assistant that helps the team find answers in Verra documents, methodologies and research papers — with citations they can verify.</li>
                 <li>Trained an Above-Ground Biomass model aligned with Verra's VM0047 methodology, set up so the science team can re-run it on demand.</li>
