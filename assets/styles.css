@@ -366,27 +366,27 @@ code { font-family: var(--font-mono); font-size: 0.9em; padding: 2px 6px; border
 .about-prose p:last-child { margin-bottom: 0; }
 
 /* ---------- Skills ---------- */
-.skills-grid {
+.skills-inner { max-width: 780px; margin-inline: auto; }
+.skills-intro {
+  margin: 0 0 28px;
+  color: var(--text);
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+.skills-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.skill-stack-item {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 10px;
 }
-.skill-group {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  padding: 20px;
-}
-.skill-group h3 {
-  margin: 0 0 12px;
-  font-size: 0.78rem;
-  text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--text-soft);
-  font-weight: 600;
-}
-@media (max-width: 720px) {
-  .skills-grid { grid-template-columns: 1fr; }
+.skill-lead {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  line-height: 1.5;
 }
 
 /* ---------- Two col ---------- */
