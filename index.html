@@ -157,7 +157,8 @@
                 of hands-on coding.
               </p>
               <ul class="bullets">
-                <li>Started <code>data-canopy</code>, the monorepo where most of our data, APIs and services live. It's where the team works day-to-day.</li>
+                <li>Built our platform's foundations — a Kubernetes cluster on GKE, deployed continuously through GitOps, set up to scale and grow as we do. APIs, databases and supporting services all run on it.</li>
+                <li>Run the day-to-day on that platform: Postgres clusters with CloudNativePG, Prometheus and Grafana for observability, Prefect workers for orchestration, LiteLLM as our LLM gateway, our own TiTiler service for serving raster data — and the rest of the carbon-platform APIs and apps on top.</li>
                 <li>Currently building <strong>Canopy</strong> — the platform that brings the carbon team's tools into one place, shaped by feedback sessions with the people who actually use it.</li>
                 <li>Set up our data architecture on Google Cloud — Postgres/PostGIS on Kubernetes, Databricks for heavier compute, plus the usual Python data toolbox (Dask, Xarray, MLFlow).</li>
                 <li>Built the data integration pipeline for forestry partners — validated staging/production flow so quarter-end isn't a panic.</li>
